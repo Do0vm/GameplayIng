@@ -8927,7 +8927,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Interaction
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -10739,6 +10739,7 @@ GameObject:
   - component: {fileID: 2022701984}
   - component: {fileID: 2022701983}
   - component: {fileID: 2022701986}
+  - component: {fileID: 2022701987}
   m_Layer: 0
   m_Name: End Flag
   m_TagString: Untagged
@@ -10880,6 +10881,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.78462756, y: 1.4876732}
   m_EdgeRadius: 0
+--- !u!114 &2022701987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2022701982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d560310133a7b2e4bacc20349fad26bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2029965246
 GameObject:
   m_ObjectHideFlags: 0
