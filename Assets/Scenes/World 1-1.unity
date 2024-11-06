@@ -403,6 +403,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   switchLeft: {fileID: 21300000, guid: 79052a93beaf1be48b6d9a73f3502f6c, type: 3}
   switchRight: {fileID: 21300000, guid: 7a9ebc8ea72042948a8ef9dbbc7f11b9, type: 3}
+  Bridge: {fileID: 239763848}
 --- !u!1001 &95117781
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7985,6 +7986,7 @@ GameObject:
   - component: {fileID: 735656168}
   - component: {fileID: 735656167}
   - component: {fileID: 735656166}
+  - component: {fileID: 735656170}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -8078,6 +8080,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &735656170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735656165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 478409bca7e5fa0498df3c9252107f3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionText: {fileID: 1059871506}
 --- !u!1 &753344568
 GameObject:
   m_ObjectHideFlags: 0
@@ -8867,7 +8882,7 @@ GameObject:
   - component: {fileID: 1059871507}
   - component: {fileID: 1059871506}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Interaction
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
