@@ -37,7 +37,8 @@ public class ButtonController : MonoBehaviour
             if (buttonActive && Input.GetKeyDown(KeyCode.E) && PlayerInventory.Instance.IsInInventory(requiredItemID))
             {
                 Item gemItem = PlayerInventory.Instance.GetInventory().Find(item => item.uniqueID == requiredItemID);
-                PlayerInventory.Instance.RemoveItemFromInventory(gemItem);
+                PlayerInventory.Instance.RemoveItemFromInventory("GEM");
+
 
                 InteractionUI.Instance.ShowInteraction("Button activated with GEM!");
                 platformController.EnablePlatformInteraction();
