@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerLife : MonoBehaviour
 {
@@ -22,6 +23,7 @@ public class PlayerLife : MonoBehaviour
         _animator.SetTrigger("Hurt");
         _audioPlayer.PlayAudio(SoundFX.Hurt);
         UpdateUI();
+        if (_life <= 0) TriggerGameOver();
     }
 
     public void Heal(int heal)
@@ -33,5 +35,10 @@ public class PlayerLife : MonoBehaviour
     private void UpdateUI()
     {
         lifeUI.fillAmount = (float)_life / maxLife;
+    }
+
+    private void TriggerGameOver()
+    {
+        SceneManager.LoadScene("YouDied");
     }
 }
